@@ -47,7 +47,6 @@ The time complexity of this solution is O(n), where n is the length of the input
 A clever alternative involves using a "for" loop to compare characters from the beginning and end, only up to the midpoint.
 
 ```javascript
-Copy code
 function isPalindromeHalfIndex(str) {
   const length = str.length;
   const mid = Math.floor(length / 2);
