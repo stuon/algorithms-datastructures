@@ -22,14 +22,12 @@ function reverseStringRecursive(str) {
 
 const reverseString = reverseStringArray;
 
-const testSingleChar = reverseString("z");
-console.log("testSingleChar: \"" + testSingleChar + "\"");
-
-const testWord = reverseString("apples");
-console.log("testWord: \"" + testWord + "\"");
-
-const testSentence = reverseString(" spaces and braces }");
-console.log("testSentence: \"" + testSentence + "\"");
-
-const testEmpty = reverseStringArray("");
-console.log("testEmpty: \"" + testEmpty + "\"");
+// Test Cases
+console.log(reverseString("hello"));           // Output: "olleh"
+console.log(reverseString("world"));           // Output: "dlrow"
+console.log(reverseString("12345"));           // Output: "54321"
+console.log(reverseString(""));                // Output: ""
+console.log(reverseString("a"));               // Output: "a"
+console.log(reverseString("racecar"));         // Output: "racecar"
+console.log(reverseString("programming"));     // Output: "gnimmargorp"
+console.log(reverseString("  spaces "));       // Output: " secaps  "

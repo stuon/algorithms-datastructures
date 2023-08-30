@@ -2,6 +2,20 @@
 
 The reverse string problem is a classic programming challenge where you're tasked with reversing the order of characters in a given string. While it might seem like a simple task, it can be approached in various ways, each with its own trade-offs in terms of efficiency and code complexity.
 
+## Test Casese
+
+```javascript
+// Test Cases
+console.log(reverseString("hello"));           // Output: "olleh"
+console.log(reverseString("world"));           // Output: "dlrow"
+console.log(reverseString("12345"));           // Output: "54321"
+console.log(reverseString(""));                // Output: ""
+console.log(reverseString("a"));               // Output: "a"
+console.log(reverseString("racecar"));         // Output: "racecar"
+console.log(reverseString("programming"));     // Output: "gnimmargorp"
+console.log(reverseString("  spaces "));       // Output: " secaps  "
+```
+
 ## Approach 1: Using Array Manipulation
 
 The first approach involves converting the string into an array, reversing the array, and then converting it back into a string. Here's how it's done:
