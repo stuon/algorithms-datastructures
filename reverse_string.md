@@ -1,6 +1,6 @@
 # Reverse String
 
-The reverse string problem is a classic programming challenge where you're tasked with reversing the order of characters in a given string. While it might seem like a simple task, it can be approached in various ways, each with its own trade-offs in terms of efficiency and code complexity. In this blog post, we'll explore three different methods to solve the reverse string problem using JavaScript and discuss the time complexity (often denoted as "O complexity") of each approach.
+The reverse string problem is a classic programming challenge where you're tasked with reversing the order of characters in a given string. While it might seem like a simple task, it can be approached in various ways, each with its own trade-offs in terms of efficiency and code complexity.
 
 ## Approach 1: Using Array Manipulation
 
