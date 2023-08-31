@@ -1,3 +1,21 @@
+// Test Cases
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+// Test Cases
+console.log(reverseString("hello"));           // Output: "olleh"
+console.log(reverseString("world"));           // Output: "dlrow"
+console.log(reverseString("12345"));           // Output: "54321"
+console.log(reverseString(""));                // Output: ""
+console.log(reverseString("a"));               // Output: "a"
+console.log(reverseString("racecar"));         // Output: "racecar"
+console.log(reverseString("programming"));     // Output: "gnimmargorp"
+console.log(reverseString("  spaces "));       // Output: " secaps  "
+
+// Solutions
+
 function reverseStringArray(str) {
   return str.split('').reverse().join('');
 }
@@ -10,6 +28,14 @@ function reverseStringForLoop(str) {
     return reversed;
 }
 
+function reverseStringForeach(str) {
+  let reversed = '';
+  for (const c of str) {
+    reversed = c + reversed;
+  }
+  return reversed;
+}
+
 function reverseStringRecursive(str) {
     if (str === '') {
       return '';
@@ -17,17 +43,3 @@ function reverseStringRecursive(str) {
       return reverseStringRecursive(str.substr(1)) + str[0];
     }
 }
-
-// Test Cases
-
-const reverseString = reverseStringArray;
-
-// Test Cases
-console.log(reverseString("hello"));           // Output: "olleh"
-console.log(reverseString("world"));           // Output: "dlrow"
-console.log(reverseString("12345"));           // Output: "54321"
-console.log(reverseString(""));                // Output: ""
-console.log(reverseString("a"));               // Output: "a"
-console.log(reverseString("racecar"));         // Output: "racecar"
-console.log(reverseString("programming"));     // Output: "gnimmargorp"
-console.log(reverseString("  spaces "));       // Output: " secaps  "
