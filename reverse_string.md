@@ -61,12 +61,12 @@ Explanation:
 The third approach involves using a for...of to iterate through the string and build the reversed string.
 
 ```javascript
-function reverseStringForLoop(str) {
-    let reversed = '';
-    for (let i = str.length - 1; i >= 0; i--) {
-      reversed += str[i];
-    }
-    return reversed;
+function reverseStringForOf(str) {
+  let reversed = '';
+  for (const char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
 }
 ```
 
