@@ -1,4 +1,4 @@
-// Test Cases
+// Reverse String - Given a string, return the reverse of it.
 
 function reverseString(str) {
   return str.split('').reverse().join('');
