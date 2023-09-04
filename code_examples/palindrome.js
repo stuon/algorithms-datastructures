@@ -1,3 +1,21 @@
+// Palindrome - Given a string, check if the sequence of characters remains unchanged when read backwards.
+
+// Test Cases
+
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+
+}
+
+console.log(isPalindrome(""));                  // true (Empty string is a palindrome)
+console.log(isPalindrome("a"));                 // true (Single character is a palindrome)
+console.log(isPalindrome("racecar"));           // true (Standard palindrome)
+console.log(isPalindrome("hello"));             // false (Non-palindrome)
+console.log(isPalindrome("12321"));             // true (Numeric palindrome)
+console.log(isPalindrome("hello olleh"));       // true (Mirror image)
+console.log(isPalindrome("algorithm"));         // false (Non-palindrome)
+
 
 // Solution 1: Using Reverse Comparison
 
@@ -51,15 +69,3 @@ function isPalindromeRecursion(str) {
   
   return isPalindromeRecursion(str.substring(1, str.length - 1));
 }
-
-// Test Cases
-
-const isPalindrome = isPalindromeReverseComparison;
-
-console.log(isPalindrome(""));                  // true (Empty string is a palindrome)
-console.log(isPalindrome("a"));                 // true (Single character is a palindrome)
-console.log(isPalindrome("racecar"));           // true (Standard palindrome)
-console.log(isPalindrome("hello"));             // false (Non-palindrome)
-console.log(isPalindrome("12321"));             // true (Numeric palindrome)
-console.log(isPalindrome("hello olleh"));       // true (Mirror image)
-console.log(isPalindrome("algorithm"));         // false (Non-palindrome)
