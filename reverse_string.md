@@ -51,7 +51,7 @@ function reverseStringForLoop(str) {
 }
 ```
 
-Explanation:
+**Explanation**
 
 1. The 'for' loop starts from the end of the string and iterates backward.
 2. In each iteration, it appends the current character to the reversed string.
@@ -60,9 +60,32 @@ Explanation:
 
 This approach also has a time complexity of O(n), where n is the length of the input string. The loop iterates through each character exactly once.
 
-## Approach 3: Using Recursion
+## Approach 3: Using a For...Of
 
-The third approach involves using a recursive function to reverse the string.
+The third approach involves using a for...of to iterate through the string and build the reversed string.
+
+```javascript
+function reverseStringForOf(str) {
+  let reversed = '';
+  for (const char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
+}
+```
+
+**Explanation**
+
+1. The 'for...of' loop starts from the start of the string and iterates forward.
+2. In each iteration, it appends the current character to the beginning of the reversed string.
+
+**Time Complexity**
+
+This approach also has a time complexity of O(n), where n is the length of the input string. The loop iterates through each character exactly once.
+
+## Approach 4: Using Recursion
+
+The fourth approach involves using a recursive function to reverse the string.
 
 ```javascript
 function reverseStringRecursive(str) {
@@ -74,11 +97,11 @@ function reverseStringRecursive(str) {
 }
 ```
 
-Explanation:
+**Explanation**
 
 1. The base case of the recursion is an empty string, which returns an empty string.
 2. In the recursive case, the function calls itself with the substring excluding the first character and then appends the first character to the end.
 
-Time Complexity: 
+**Time Complexity**
 
 This approach also has a time complexity of O(n), where n is the length of the input string. Each recursive call processes one character, and there are n calls in total.

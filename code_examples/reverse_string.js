@@ -28,10 +28,10 @@ function reverseStringForLoop(str) {
     return reversed;
 }
 
-function reverseStringForeach(str) {
+function reverseStringForOf(str) {
   let reversed = '';
-  for (const c of str) {
-    reversed = c + reversed;
+  for (const char of str) {
+    reversed = char + reversed;
   }
   return reversed;
 }
