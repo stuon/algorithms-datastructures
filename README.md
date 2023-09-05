@@ -4,3 +4,4 @@
 - [Palindrome in Javascript](palindrome.md)
 - [Reverse Integer in Javascript](reverse_integer.md)
 - [Max Char in Javascript](max_char.md)
+- [Fizz buzz challenge in Javascript](fizz_buzz.md)
