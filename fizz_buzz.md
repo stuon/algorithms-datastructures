@@ -96,7 +96,11 @@ function fizzBuzzBasic(limit) {
 }
 ```
 
-Time Complexity (O complexity): O(n), where n is the value of the 'limit' parameter. This solution has a linear time complexity because it iterates through all numbers from 1 to 'limit' once.
+*Time Complexity*
+
+The time complexity is O(n), where "n" is the value of the `limit`.
+
+In this code, you have a single loop that iterates from 1 to `limit`, and for each iteration, you have a series of if-else conditions. Each condition involves simple arithmetic operations (modulo operations and comparisons) that take constant time regardless of the value of `n`. Therefore, the time complexity remains O(n) because you have a linear relationship between the input size (limit) and the number of operations performed.
 
 ## Solution 2. Using Ternary Operators
 
@@ -118,7 +122,11 @@ function fizzBuzzTernary(limit) {
 }
 ```
 
-Time Complexity (O complexity): O(n) - Same as the basic approach, it iterates through all numbers from 1 to 'limit' once.
+*Time Complexity*
+
+The time complexity is O(n), where "n" is the value of the `limit`.
+
+Same as the basic approach, it iterates through all numbers from 1 to 'limit' once.
 
 ## 3. Using a Map
 
@@ -146,4 +154,9 @@ function fizzBuzzMap(limit, rules) {
 fizzBuzzMap(15, customRules);
 ```
 
-Time Complexity (O complexity): O(n * m) = O(n), where n is the value of the 'limit' parameter and m is the number of custom rules. This solution has a linear time complexity for each number but can become more complex as you add more rules.
+*Time Complexity*
+The time complexity is O(n), where "n" is the value of the `limit` parameter.
+
+In the for loop, you are iterating from 1 to limit, and for each iteration, you are performing a constant-time operation, which is a lookup in the customRules Map using the get method. Map lookups have an average time complexity of O(1) because they are implemented as hash maps.
+
+Therefore, the overall time complexity of the code is O(n) because you are performing a constant-time operation for each of the "n" iterations in the loop.
