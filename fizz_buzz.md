@@ -125,7 +125,6 @@ Time Complexity (O complexity): O(n) - Same as the basic approach, it iterates t
 Another solution involves predefining a map of divisors and corresponding strings ("Fizz" or "Buzz"). This approach allows for easy scalability if you want to add more custom rules. However, this map and the code can grow quite large if we increase the max limit.
 
 ```javascript
-
 const customRules = new Map([
     [3, "fizz"],
     [5, "buzz"],
