@@ -123,7 +123,9 @@ const customRules = new Map([
    
 function fizzBuzzMap(limit, rules) {
   for (let i = 1; i <= limit; i++)
-  console.log(rules.get(i) || i);
+  {
+    console.log(rules.get(i) || i);
+  }
 }
 
 fizzBuzzMap(15, customRules);
