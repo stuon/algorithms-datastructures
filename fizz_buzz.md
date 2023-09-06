@@ -96,7 +96,7 @@ function fizzBuzzBasic(limit) {
 }
 ```
 
-*Time Complexity*
+### Time Complexity
 
 The time complexity is O(n), where "n" is the value of the `limit`.
 
@@ -122,7 +122,7 @@ function fizzBuzzTernary(limit) {
 }
 ```
 
-*Time Complexity*
+### Time Complexity
 
 The time complexity is O(n), where "n" is the value of the `limit`.
 
@@ -154,7 +154,8 @@ function fizzBuzzMap(limit, rules) {
 fizzBuzzMap(15, customRules);
 ```
 
-*Time Complexity*
+### Time Complexity
+
 The time complexity is O(n), where "n" is the value of the `limit` parameter.
 
 In the for loop, you are iterating from 1 to limit, and for each iteration, you are performing a constant-time operation, which is a lookup in the customRules Map using the get method. Map lookups have an average time complexity of O(1) because they are implemented as hash maps.
