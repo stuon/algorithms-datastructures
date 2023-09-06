@@ -109,24 +109,21 @@ function fizzBuzzTernary(limit) {
 
 // Solution 3. Using a Map
 
+
+const customRules = new Map([
+  [3, "fizz"],
+  [5, "buzz"],
+  [6, "fizz"],
+  [9, "fizz"],
+  [10, "buzz"],  
+  [12, "fizz"],
+  [15, "fizzbuzz"]
+  // Add more rules
+]);
+   
 function fizzBuzzMap(limit, rules) {
-  for (let i = 1; i <= limit; i++) {
-    let output = "";
-
-    rules.forEach((rule) => {
-      if (i % rule.divisor === 0) {
-        output += rule.text;
-      }
-    });
-
-    console.log(output || i);
-  }
+  for (let i = 1; i <= limit; i++)
+  console.log(rules.get(i) || i);
 }
 
-const customRules = [
-  { divisor: 3, text: "Fizz" },
-  { divisor: 5, text: "Buzz" },
-  // Add more custom rules here if needed
-];
-
-fizzBuzzMap(100, customRules);
+fizzBuzzMap(15, customRules);

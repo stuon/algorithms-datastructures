@@ -125,27 +125,24 @@ Time Complexity (O complexity): O(n) - Same as the basic approach, it iterates t
 Another solution involves predefining a map of divisors and corresponding strings ("Fizz" or "Buzz"). This approach allows for easy scalability if you want to add more custom rules. However, this map and the code can grow quite large if we increase the max limit.
 
 ```javascript
+
+const customRules = new Map([
+    [3, "fizz"],
+    [5, "buzz"],
+    [6, "fizz"],
+    [9, "fizz"],
+    [10, "buzz"],  
+    [12, "fizz"],
+    [15, "fizzbuzz"]
+    // Add more rules
+ ]);
+     
 function fizzBuzzMap(limit, rules) {
-  for (let i = 1; i <= limit; i++) {
-    let output = "";
-
-    rules.forEach((rule) => {
-      if (i % rule.divisor === 0) {
-        output += rule.text;
-      }
-    });
-
-    console.log(output || i);
-  }
+    for (let i = 1; i <= limit; i++)
+    console.log(rules.get(i) || i);
 }
 
-const customRules = [
-  { divisor: 3, text: "Fizz" },
-  { divisor: 5, text: "Buzz" },
-  // Add more custom rules here if needed
-];
-
-fizzBuzzMap(100, customRules);
+fizzBuzzMap(15, customRules);
 ```
 
 Time Complexity (O complexity): O(n * m) = O(n), where n is the value of the 'limit' parameter and m is the number of custom rules. This solution has a linear time complexity for each number but can become more complex as you add more rules.
