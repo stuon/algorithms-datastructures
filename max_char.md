@@ -4,12 +4,12 @@ Given a string, return the character that occurs the most frequently.
 
 ```javascript
 console.log(maxChar("hello")); // Expected output: 'l' (occurs 2 times)
-console.log(maxChar("programming")); // Expected output: 'g' (occurs 2 times)
+console.log(maxChar("programming guy")); // Expected output: 'g' (occurs 3 times)
 console.log(maxChar("aabbcc")); // Expected output: 'a' (occurs 2 times)
 console.log(maxChar("")); // Expected output: '' (empty string)
 console.log(maxChar("aaaaa")); // Expected output: 'a' (occurs 5 times)
 console.log(maxChar("12345")); // Expected output: '1' (occurs 1 time)
-console.log(maxChar("  a b c d e f ")); // Expected output: ' ' (space occurs 7 times)
+console.log(maxChar(" a b c d e f ")); // Expected output: ' ' (space occurs 7 times)
 console.log(maxChar("!@#$%^&*()")); // Expected output: '!' (occurs 1 time)
 ```
 
