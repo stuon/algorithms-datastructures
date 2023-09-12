@@ -109,7 +109,6 @@ function fizzBuzzTernary(limit) {
 
 // Solution 3. Using a Map
 
-
 const customRules = new Map([
   [3, "fizz"],
   [5, "buzz"],
