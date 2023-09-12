@@ -42,17 +42,17 @@ console.log("Test Case 4:", result4);
 // Expected Output: []
 
 // Test Case 5
-const testArray6 = [1, 2, 3, 4, 5];
-const chunkSize6 = 7;
-const result6 = chunkArray(testArray6, chunkSize6);
-console.log("Test Case 5:", result6);
+const testArray5 = [1, 2, 3, 4, 5];
+const chunkSize5 = 7;
+const result5 = chunkArray(testArray5, chunkSize5);
+console.log("Test Case 5:", result5);
 // Expected Output: [[1, 2, 3, 4, 5]]
 
 // Test Case 6
-const testArray7 = ['a', 'b', 'c', 'd'];
-const chunkSize7 = 2;
-const result7 = chunkArray(testArray7, chunkSize7);
-console.log("Test Case 6:", result7);
+const testArray6 = ['a', 'b', 'c', 'd'];
+const chunkSize6 = 2;
+const result6 = chunkArray(testArray6, chunkSize6);
+console.log("Test Case 6:", result6);
 // Expected Output: [['a', 'b'], ['c', 'd']]
 ```
 
