@@ -6,6 +6,8 @@ Array chunking is a common problem in JavaScript where you need to split an arra
 
 Given an array and a chunk size, you need to create an array of smaller arrays (chunks), where each chunk contains elements equal to the specified size, except for the last chunk, which can have fewer elements if there aren't enough left to fill a complete chunk.
 
+**Assume chunk size is greater than zero**
+
 For example, if you have an array `[1, 2, 3, 4, 5]` and a chunk size of 2, you should split it into `[[1, 2], [3, 4], [5]]`.
 
 ## Test Cases
