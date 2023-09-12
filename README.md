@@ -6,3 +6,4 @@
 - [Max Char in Javascript](max_char.md)
 - [Fizz buzz challenge in Javascript](fizz_buzz.md)
 - [Anagram in Javascript](anagram.md)
+- [Array Chunk in Javascript](array_chunk.md)
