@@ -60,21 +60,18 @@ function chunkArray(arr, chunkSize) {
 
 ## Solution 3: Using `reduce()`
 
-A more elegant approach is to use the `reduce()` method to build the chunked array gradually.
+A more elegant or fun approach is to use the `reduce()` method to build the chunked array gradually.
 
 ```javascript
-function chunkArray(arr, chunkSize) {
-  return arr.reduce((result, item) => {
-    const lastChunk = result[result.length - 1];
-    
-    if (!lastChunk || lastChunk.length === chunkSize) {
-      result.push([item]);
-    } else {
-      lastChunk.push(item);
-    }
-    
-    return result;
-  }, []);
+function chunkArray(array, chunkSize) {
+    return array.reduce((result, item, index) => {
+        if (index % chunkSize === 0)
+            result.push([item]);
+        else
+            result[result.length - 1].push(item);
+
+        return result;
+    }, []);
 }
 ```
 
