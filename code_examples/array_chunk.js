@@ -78,16 +78,13 @@ function chunkArrayLoop(arr, chunkSize) {
 
   // Solution 3: Using `reduce()`
 
-  function chunkArrayReduce(arr, chunkSize) {
-    return arr.reduce((result, item) => {
-      const lastChunk = result[result.length - 1];
-      
-      if (!lastChunk || lastChunk.length === chunkSize) {
-        result.push([item]);
-      } else {
-        lastChunk.push(item);
-      }
-      
-      return result;
+function chunkArrayReduce(array, chunkSize) {
+    return array.reduce((result, item, index) => {
+        if (index % chunkSize === 0)
+            result.push([item]);
+        else
+            result[result.length - 1].push(item);
+
+        return result;
     }, []);
-  }
+}
