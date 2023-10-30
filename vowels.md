@@ -54,7 +54,8 @@ Explanation: This solution uses a regular expression to match all vowels in the 
 
 Time Complexity (O): This solution also has a time complexity of O(n), where 'n' is the length of the input string. Regular expressions are highly optimized for such tasks.
 
-Solution 3: Reduce Function
+# Solution 3: Reduce Function
+
 We can use the `Array.prototype.reduce` method to count the vowels in the string.
 
 ```javascript
