@@ -8,3 +8,4 @@
 - [Anagram in Javascript](anagram.md)
 - [Array Chunk in Javascript](array_chunk.md)
 - [Pyramid in Javascript](pyramid.md)
+- [Vowels in Javascript](vowels.md)
